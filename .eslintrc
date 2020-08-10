@@ -1,0 +1,22 @@
+{
+  "parser": "babel-eslint",
+  // where we use our code (environment)
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+    // node.js, because webpack is in node.js
+  },
+  "rules": {
+    // our specific rules for the project
+    "quotes": "off",
+    "max-len": "off",
+    "indent": "off",
+    "comma-dangle": "off",
+    "require-jsdoc": "off"
+  },
+  "extends": [
+    "eslint:recommended",
+    "google"
+  ]
+}
