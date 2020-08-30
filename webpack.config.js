@@ -12,7 +12,7 @@ const isDev = !isProd;
 // when we're in production mode, we don't need hash numbers in the names of our css and js files
 // since js (in output) and css (in MiniCssExtractPlugin) have the same pattern (bundle.[hash]), we can create a function fileName,
 // with argument 'ext' (it will be 'css' or 'js'), if flag isDev is true -> do not use [hash], otherwise, use it (in Prod).
-const fileName = ext => isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`;
+const fileName = (ext) => isDev ? `bundle.${ext}` : `bundle.[hash].${ext}`;
 
 
 // return array of loaders for Babel
